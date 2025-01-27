@@ -1,0 +1,14 @@
+.ant-layout-sider,
+.ant-menu {
+    background-color: #09090B !important;
+}
+
+.ant-menu {
+    font-size: 1.1rem !important;
+    li {
+        margin-bottom: .8rem !important;
+        &.ant-menu-item-selected {
+            background-color: transparent !important;
+        }
+    }
+}

@@ -1,0 +1,18 @@
+/* [project]/src/components/leftbar.css [app-client] (css) */
+.ant-layout-sider, .ant-menu {
+  background-color: #09090b !important;
+}
+
+.ant-menu {
+  font-size: 1.1rem !important;
+}
+
+.ant-menu li {
+  margin-bottom: .8rem !important;
+}
+
+.ant-menu li.ant-menu-item-selected {
+  background-color: #0000 !important;
+}
+
+/*# sourceMappingURL=src_components_leftbar_b52d8e.css.map*/
