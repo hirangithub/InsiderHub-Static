@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import {
   HomeOutlined,
@@ -7,7 +8,6 @@ import {
   SettingOutlined,
 } from '@ant-design/icons';
 import { Menu } from 'antd';
-import "./leftbar.css";
 
 const items = [
   HomeOutlined,

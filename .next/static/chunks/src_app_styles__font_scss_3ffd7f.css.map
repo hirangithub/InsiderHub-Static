@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack://[project]/src/app/styles/_font.scss.css"],"sourcesContent":["@font-face{font-family:\"Inter Hub\";src:url(\"../fonts/Inter-Regular.ttf\") format(\"truetype\");font-weight:400;font-style:normal}@font-face{font-family:\"Inter Hub\";src:url(\"../fonts/Inter-Medium.ttf\") format(\"truetype\");font-weight:500;font-style:normal}@font-face{font-family:\"Inter Hub\";src:url(\"../fonts/Inter-SemiBold.ttf\") format(\"truetype\");font-weight:600;font-style:normal}@font-face{font-family:\"Inter Hub\";src:url(\"../fonts/Inter-Bold.ttf\") format(\"truetype\");font-weight:700;font-style:normal}"],"names":[],"mappings":"AAAA;;;;;;;AAA8H;;;;;;;AAA6H;;;;;;;AAA+H"}},
+    {"offset": {"line": 28, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

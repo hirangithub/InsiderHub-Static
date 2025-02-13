@@ -1,0 +1,107 @@
+/* [project]/src/app/globals.css [app-client] (css) */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: var(--font-inter);
+}
+
+h1 {
+  font-family: var(--font-roboto-mono);
+}
+
+html, body {
+  background-color: #09090b;
+  color: #fff;
+}
+
+a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+h4 {
+  font-size: 1rem;
+  padding-bottom: .5rem;
+}
+
+h5 {
+  font-size: .9rem;
+  font-weight: normal;
+}
+
+i {
+  font-weight: normal;
+}
+
+.layout-wrapper {
+  min-height: 100vh !important;
+}
+
+:root {
+  --button-font-size: 166px;
+  --button-padding-block: 12px;
+  --button-padding-inline: 24px;
+  --primary-color: #00f;
+  --border-radius: 8px;
+}
+
+@media (width <= 768px) {
+  :root {
+    --button-font-size: 20px;
+    --button-padding-block: 8px;
+    --button-padding-inline: 16px;
+  }
+}
+
+.buttonxx {
+  background-color: var(--primary-color);
+  border-radius: var(--border-radius);
+  padding: 12px 24px;
+  font-size: 16px;
+}
+
+
+/* [project]/src/components/leftbar.css [app-client] (css) */
+.ant-layout-sider, .ant-menu {
+  background-color: #09090b !important;
+}
+
+.ant-menu {
+  font-size: 1.1rem !important;
+}
+
+.ant-menu li {
+  margin-bottom: .8rem !important;
+}
+
+.ant-menu li.ant-menu-item-selected {
+  background-color: #0000 !important;
+}
+
+
+/*# sourceMappingURL=src_01f7d7._.css.map*/

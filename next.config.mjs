@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    sassOptions: {
-        includePaths: ["node_modules"],
-    },
+  sassOptions: {
+      includePaths: ["node_modules"],
+  },
 
 };
 
