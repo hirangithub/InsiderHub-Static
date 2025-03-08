@@ -17,6 +17,7 @@ import {
   DownOutlined
 } from '@ant-design/icons';
 import Title from 'antd/es/typography/Title';
+import Link from 'next/link';
 
 
 const handleMenuClick = (e) => {
@@ -65,13 +66,13 @@ export default function Home() {
       <Card bordered={false} style={{ width: '100%', marginTop: '1rem' }} className="card-mycollection">
         <Title level={5} style={{ margin: 0 }}>My collection</Title>
         <Space style={{ width: '100%', flexDirection: 'column', gap: '.8rem', paddingTop: '.5rem' }}>
-          <div className="inner">
-            <Avatar className="product-img" style={{ backgroundImage: `url('/p1.jpg')` }} />
+          <Link href="/cart" passHref className="inner">
+            <Avatar className="product-img" style={{ backgroundImage: `url('/products/p-t4.jpg')` }} />
             <div>
               <label className="product-name">Trail Running Jacket Nike Windrunner</label>
               <figure>$99</figure>
             </div>
-          </div>
+          </Link>
           <div className="inner">
             <Avatar className="product-img" style={{ backgroundImage: `url('/p2.jpg')` }} />
             <div>
@@ -89,7 +90,7 @@ export default function Home() {
         </Space>
       </Card>
 
-      <Card bordered={false} style={{ width: '100%', marginTop: '1rem' }} className="card-sr">
+      <Card bordered={false} style={{ width: '100%', marginTop: '1rem' }} className="card card-sr">
         <Title level={4} style={{ margin: 0 }}>Want to Make your Event Unforgettable with Golden Nugget</Title>
         <Button size="large" className="white">Try now</Button>
       </Card>

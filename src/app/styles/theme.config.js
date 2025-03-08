@@ -30,14 +30,14 @@ const theme = {
           colorPrimary: 'var(--primary-color)',
           colorPrimaryHover: 'var(--primary-hover-color)',
           primaryShadow: '0',
-
           colorBorder: 'var(--button-outline-border)',
           colorBorderHover: 'var(--button-outline-hover-border)',
           controlItemBg: 'var(--button-outline-bg)',
           controlItemBgHover: 'var(--button-outline-hover-bg)',
         },
         Input: {
-          colorPrimary: '#eb2f96',
+          fontSize: 'var(--font-size-small)',
+          colorBorder: 'var(--input-outline-border)',
           algorithm: true, 
         },
         Menu: {
@@ -50,6 +50,23 @@ const theme = {
           siderBg: 'var(--sider-bg-color)', // Default background color for `.ant-layout-sider`
           siderColor: 'var(--sider-text-color)', // Text color in the Sider
           bodyBg: 'var(--background-color)', // Main layout background
+        },
+        Breadcrumb: {
+          linkColor: 'var(--link-color)', // Define breadcrumb link color
+          linkHoverColor: 'var(--link-hover-color)', // Define breadcrumb link hover color
+          separatorColor: 'var(--breadcrumb-separator-color)',
+          fontSize: 'var(--font-size-small)', // Override breadcrumb font size if needed
+        },
+        Hr: {
+          borderColor: 'var(--hr-color)', // Border color for hr
+          borderWidth: '.5rem', // Adjust the border width if needed
+        },
+        Rate: {
+          fontSize: 'var(--font-size-smaller)', // Customize the size of the rating stars
+          colorPrimary: 'var(--primary-color)', // Primary color for the filled stars
+          colorSecondary: 'var(--secondary-color)', // Color for empty or unfilled stars
+          colorDisabled: 'var(--disabled-color)', // Color for disabled stars
+          colorTextDisabled: 'var(--unrated-color)', // Color for unrated stars (use CSS variable for flexibility)
         },
       },
   };
