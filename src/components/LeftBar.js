@@ -8,6 +8,7 @@ import {
   SettingOutlined,
 } from '@ant-design/icons';
 import { Menu } from 'antd';
+import Link from 'next/link';
 
 const items = [
   HomeOutlined,
@@ -33,7 +34,7 @@ function LeftBar() {
         {
           key: '1',
           icon: <HomeOutlined />,
-          label: 'Home',
+          label: <Link href="/">Home</Link>,
         },
         {
           key: '2',
@@ -53,7 +54,7 @@ function LeftBar() {
         {
           key: '5',
           icon: <SettingOutlined />,
-          label: 'Settings',
+          label: <Link href="/settings">Settings</Link>,
         },
       ]}
     />

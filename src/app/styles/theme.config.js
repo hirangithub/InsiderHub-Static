@@ -1,5 +1,7 @@
 // theme/themeConfig.js
 
+import Dropdown from "antd/es/dropdown/dropdown";
+
 const theme = {
     cssVar: true, 
     token: {
@@ -67,6 +69,10 @@ const theme = {
           colorSecondary: 'var(--secondary-color)', // Color for empty or unfilled stars
           colorDisabled: 'var(--disabled-color)', // Color for disabled stars
           colorTextDisabled: 'var(--unrated-color)', // Color for unrated stars (use CSS variable for flexibility)
+        },
+        Dropdown: {
+          fontSize: 'var(--font-size-small)', // Font size for dropdown items
+          colorText: 'var(--text-color)', // Text color for dropdown items
         },
       },
   };

@@ -63,7 +63,7 @@ export default function Home() {
   {/* Sticky Content Block */} 
   const content = (
     <>
-      <Card bordered={false} style={{ width: '100%', marginTop: '1rem' }} className="card-mycollection">
+      <Card style={{ width: '100%', marginTop: '1rem' }} className="card-mycollection">
         <Title level={5} style={{ margin: 0 }}>My collection</Title>
         <Space style={{ width: '100%', flexDirection: 'column', gap: '.8rem', paddingTop: '.5rem' }}>
           <Link href="/cart" passHref className="inner">
@@ -90,7 +90,7 @@ export default function Home() {
         </Space>
       </Card>
 
-      <Card bordered={false} style={{ width: '100%', marginTop: '1rem' }} className="card card-sr">
+      <Card style={{ width: '100%', marginTop: '1rem' }} className="card card-sr">
         <Title level={4} style={{ margin: 0 }}>Want to Make your Event Unforgettable with Golden Nugget</Title>
         <Button size="large" className="white">Try now</Button>
       </Card>
@@ -142,7 +142,7 @@ export default function Home() {
                         <Button variant="outlined" shape="circle" icon={<FilterOutlined />} size="large" />
                     </Flex>
                     <Flex className="post-list"> 
-                        <Card bordered={false} className="card-post">
+                        <Card className="card-post">
                             <div className="post-header">
                                 <ul>
                                   <li>
