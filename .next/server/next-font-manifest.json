@@ -1,7 +1,7 @@
 {
   "app": {
     "[project]/src/app/page": [],
-    "[project]/src/app/settings/page": []
+    "[project]/src/app/cart/page": []
   },
   "appUsingSizeAdjust": false,
   "pages": {},

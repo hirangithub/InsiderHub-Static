@@ -6,8 +6,9 @@ import {
   BellOutlined,
   MessageOutlined,
   SettingOutlined,
+  UserOutlined,
 } from '@ant-design/icons';
-import { Menu } from 'antd';
+import { Menu, Avatar } from 'antd';
 import Link from 'next/link';
 
 const items = [
@@ -16,6 +17,7 @@ const items = [
   BellOutlined,
   MessageOutlined,
   SettingOutlined,
+  UserOutlined,
 ].map((icon, index) => ({
   key: String(index + 1),
   icon: React.createElement(icon),
@@ -55,6 +57,23 @@ function LeftBar() {
           key: '5',
           icon: <SettingOutlined />,
           label: <Link href="/settings">Settings</Link>,
+        },
+        {
+          key: 'membership',
+          label: 'Memberships',
+          type: 'group',
+          children: [
+            {
+              key: 'member1',
+              icon: <Avatar size={24} src="/bob.jpg" />,
+              label: <Link href="/">Bob Seger</Link>,
+            },
+            {
+              key: 'member2',
+              icon: <Avatar size={24} src="/rob.jpg" />,
+              label: <Link href="/">Robert Downey Jr</Link>,
+            },
+          ],
         },
       ]}
     />
