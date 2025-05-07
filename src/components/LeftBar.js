@@ -66,7 +66,7 @@ function LeftBar() {
             {
               key: 'member1',
               icon: <Avatar size={24} src="/bob.jpg" />,
-              label: <Link href="/">Bob Seger</Link>,
+              label: <Link href="/guestuser">Bob Seger</Link>,
             },
             {
               key: 'member2',

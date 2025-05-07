@@ -87,6 +87,10 @@ $breakpoint-xxl: 1600px;
   hr {
     border-color: var(--hr-color);
   }
+  :root .ant-divider {
+    border-block-start: 1px solid $muted;
+    margin: 0 0 1rem;
+  }
   h1, h2, h3, h4, h5, ul, li {
     color: var(--text-color);
     padding: 0;
@@ -141,6 +145,14 @@ $breakpoint-xxl: 1600px;
       &:hover {
         color: $brand-primary;
       }
+    }
+  }
+
+  :root .ant-layout-header {
+    background-color: var(--background-color);
+    padding: 0 2rem;
+    .ant-image {
+      min-height: fit-content;
     }
   }
 
@@ -239,6 +251,53 @@ $breakpoint-xxl: 1600px;
       background-color: $muted;
       .ant-progress-bg {
         background-color: var(--primary-color);
+      }
+    }
+  }
+
+  :root .ant-picker-dropdown {
+    .ant-picker-header {
+      button {
+        color: $muted-foreground;
+      }
+      .ant-picker-header-view {
+        button {
+          color: $foreground;
+        }
+      }
+    }
+    .ant-picker-cell {
+      color: $muted-foreground;
+      &.ant-picker-cell-in-view {
+        color: $foreground;
+        &.ant-picker-cell-today {
+          .ant-picker-cell-inner {
+            &:before {
+              border-color: $brand-primary;
+            }
+          }
+        }
+        &.ant-picker-cell-selected {
+          .ant-picker-cell-inner {
+            background-color: $brand-primary;
+          }
+        }
+      }
+    }
+  }
+
+  :root .calendar-toolbar-popover {
+    .ant-btn,
+    .ant-picker {
+      width: 100%;
+      &.ant-picker {
+        padding: .5rem 1rem;
+        .ant-picker-input {
+          input {
+            font-size: var(--font-size-small);
+          }
+          
+        }
       }
     }
   }
@@ -411,6 +470,10 @@ $breakpoint-xxl: 1600px;
     font-size: var(--font-size-smaller);
     padding: 0 .8rem;
     margin: 0;
+    &.primary {
+      background-color: $brand-primary;
+      border: 0;
+    }
   }
 
   :root .ant-tabs {
@@ -441,6 +504,22 @@ $breakpoint-xxl: 1600px;
     }
     .ant-tabs-content-holder {
       border-left: 0;
+    }
+  }
+
+  :root .inner-header-bar-common {
+    padding: .5rem 1rem;
+    row-gap: .5rem;
+    color: $muted-foreground;
+    font-size: var(--font-size-small);
+    border-bottom: 1px solid var(--border);
+    margin-top: 3rem;
+    @include media(md) {
+      margin-top: 0; 
+      row-gap: 1rem;
+    }
+    .sub-title {
+      font-size: var(--font-size-small);
     }
   }
 
@@ -616,6 +695,21 @@ $breakpoint-xxl: 1600px;
             width: 100%;
             height: auto;
           }
+          &.blur-on {
+            position: relative;
+            &::after {
+              content: '';
+              position: absolute;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              background: rgba(0, 0, 0, 0.4); /* Optional: add a slight tint to the overlay */
+              backdrop-filter: blur(8px); /* Apply blur effect */
+              z-index: 1;
+              pointer-events: none; /* Ensure the overlay doesn't block clicks */
+            }
+          }
         }
         .interact-panel {
           display: flex;
@@ -723,21 +817,7 @@ $breakpoint-xxl: 1600px;
   // Product detail page
   .product-detail {
 
-    .inner-header-bar {
-      padding: .5rem 1rem;
-      row-gap: .5rem;
-      color: $muted-foreground;
-      font-size: var(--font-size-small);
-      border-bottom: 1px solid var(--border);
-      margin-top: 3rem;
-      @include media(md) {
-        margin-top: 0; 
-        row-gap: 1rem;
-      }
-
-      .sub-title {
-        font-size: var(--font-size-small);
-      }
+    .inner-header-bar-common {
       .cart-holder {
         column-gap: .2rem;
         flex-basis: auto;
@@ -1202,6 +1282,127 @@ $breakpoint-xxl: 1600px;
 
   }
 
-
 }
 
+
+// Guest or not not logged-in user page structure handle
+.guestuser-controller {
+  .ant-layout-sider,
+  .menu-item-isolate {
+    display: none;
+  }
+}
+
+//my calendar page
+.my-calendar {
+  .calendar-scroll-wrapper {
+    height: calc(100vh - 140px); /* adjust 200px as per your header/breadcrumb height */
+    overflow: auto;
+  }
+  .calendar-toolbar {
+    display: flex; 
+    align-items: center;
+    column-gap: .5rem;
+    .ant-btn {
+      font-size: var(--font-size-small);
+      &.ant-btn-color-primary {
+        padding: 8px 10px !important;
+      }
+    }
+    .ant-btn-icon-only {
+      padding: 0 .5rem;
+    }
+    .ant-picker {
+      width: max-content;
+      padding: .5rem;
+      background-color: transparent;
+      &:hover {
+        border: 1px solid $foreground;
+      }
+      .ant-picker-suffix {
+        color: $muted-foreground;
+      }
+      .ant-picker-input {
+        padding: 0 .5rem;
+        input {
+          font-size: var(--font-size-small);
+          color: $foreground;
+          width: 7rem;
+        }
+      }
+    }
+  }
+  .calendar-column {
+    border-right: 1px solid var(--border);
+    position: relative;
+    &.event-cell {
+      background-color: $card; 
+      .event-content {
+        display: flex;
+        flex-direction: column;
+        row-gap: .5rem;
+        padding: .5rem;
+        .ant-tag {
+          width: max-content;
+        }
+        label {
+          font-size: var(--font-size-base);
+          font-weight: bold;
+        }
+      }
+      
+    }
+    &:hover {
+      background-color: $card;
+    }
+  }
+  .calendar-date-header {
+    position: sticky;
+    top: 0;
+    background-color: $muted;
+    z-index: 1;
+    font-size: var(--font-size-small);
+    color: $muted-foreground;
+    border-bottom: 1px solid var(--border);
+    .slot-blank {
+      border: 0;
+    }
+    .calendar-date-cell {
+      border-left: 1px solid var(--border);
+      border-top: 4px solid $muted;
+    }
+    div.holder {
+      padding: .5rem 1rem;
+      .lbl-date,
+      .lbl-day {
+        font-size: var(--font-size-small);
+        color: $muted-foreground;
+        display: flex;
+        &.lbl-date {
+          font-size: var(--font-size-h4);
+          font-weight: 600;
+        }
+      }
+    }
+    
+  }
+  .calendar-slot {
+    border-bottom: 1px solid var(--border);
+  }
+  .today-cell {
+    border-top: 4px solid $brand-primary !important; 
+    label {
+      color: $hyperlink !important;
+    }
+  }
+  .slot-blank {
+    border-right: 1px solid var(--border);
+    text-align: right;
+    padding: .5em;
+    font-size: var(--font-size-small);
+    color: $muted-foreground;
+  }
+  
+}
+
+  

@@ -1,7 +1,7 @@
 {
   "app": {
     "[project]/src/app/page": [],
-    "[project]/src/app/cart/page": []
+    "[project]/src/app/calendar/page": []
   },
   "appUsingSizeAdjust": false,
   "pages": {},

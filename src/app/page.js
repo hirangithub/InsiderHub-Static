@@ -1,8 +1,7 @@
 "use client"; // Ensure this runs as a Client Component
 
 import { useState, useEffect } from "react";
-
-import { Button, Card, Col, Flex, Row, Space, Affix, Avatar, Tooltip, Dropdown } from "antd";
+import { Button, Card, Col, Flex, Row, Space, Affix, Avatar, Tooltip, Dropdown, Divider } from "antd";
 //import Avatar from "antd/es/avatar/avatar";
 import {
   EllipsisOutlined,
@@ -226,6 +225,8 @@ export default function Home() {
                                 </div>
                             </div>
                         </Card>
+
+                        <Divider />
 
                         <Card bordered={false} className="card-post">
                             <div className="post-header">

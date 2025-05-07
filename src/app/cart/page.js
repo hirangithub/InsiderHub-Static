@@ -65,7 +65,7 @@ export default function Cart() {
         <>  
             <div className="product-detail">
 
-                <Flex className="inner-header-bar" style={{ flexDirection: 'column' }}>  
+                <Flex className="inner-header-bar-common" style={{ flexDirection: 'column' }}>  
                     <Breadcrumb
                         items={[
                             {
