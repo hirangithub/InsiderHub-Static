@@ -23,7 +23,7 @@ const events = [
       date: "2025-05-09",
       timeStart: "3:00",
       timeEnd: "5:30",
-      title: "Motivational message for Sarah's Team",
+      title: "Motivational message for Hiran's Team",
       tag: "Special request",
     },
     {
@@ -135,25 +135,6 @@ export default function CalendarPage() {
                                 toolbarButtons
                                 )}
                             </div>
-
-                            {/* <div className="calendar-toolbar">
-                                <Button onClick={goToday}>Today</Button>
-                                <Button icon={<LeftOutlined />} onClick={goPrevWeek} />
-                                <Button icon={<RightOutlined />} onClick={goNextWeek} />
-                                <DatePicker
-                                    value={dayjs(currentDate)} 
-                                    onChange={onDatePick}
-                                    picker="date"
-                                    format="MMMM YYYY"
-                                    suffixIcon={<DownOutlined />}
-                                    allowClear={false}
-                                    className="calendar-datepicker"
-                                />
-                                
-                                <Button icon={<PlusOutlined />} type="primary" onClick={() => setModalInfo({ })}>
-                                    Create new event
-                                </Button>
-                            </div> */}
                         </Col>
                      </Row>
                 </Flex>
