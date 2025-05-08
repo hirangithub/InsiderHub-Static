@@ -209,7 +209,7 @@ function CalendarPage() {
                             align: "bottom",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$antd$2f$es$2f$col$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Col$3e$__["Col"], {
-                                    span: 20,
+                                    span: 12,
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$antd$2f$es$2f$flex$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Flex$3e$__["Flex"], {
                                         className: "sub-title",
                                         style: {
@@ -246,9 +246,11 @@ function CalendarPage() {
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$antd$2f$es$2f$col$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Col$3e$__["Col"], {
-                                    span: 4,
+                                    span: 12,
                                     style: {
-                                        justifyItems: 'flex-end'
+                                        justifyContent: 'flex-end',
+                                        width: '100%',
+                                        display: 'flex'
                                     },
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "calendar-toolbar",
@@ -263,23 +265,23 @@ function CalendarPage() {
                                                 shape: "circle",
                                                 icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$ant$2d$design$2f$icons$2f$es$2f$icons$2f$EllipsisOutlined$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__EllipsisOutlined$3e$__["EllipsisOutlined"], {}, void 0, false, {
                                                     fileName: "[project]/src/app/calendar/page.js",
-                                                    lineNumber: 132,
+                                                    lineNumber: 131,
                                                     columnNumber: 100
                                                 }, void 0),
                                                 size: "large"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/calendar/page.js",
-                                                lineNumber: 132,
+                                                lineNumber: 131,
                                                 columnNumber: 37
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/calendar/page.js",
-                                            lineNumber: 131,
+                                            lineNumber: 130,
                                             columnNumber: 33
                                         }, this) : toolbarButtons
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/calendar/page.js",
-                                        lineNumber: 129,
+                                        lineNumber: 128,
                                         columnNumber: 29
                                     }, this)
                                 }, void 0, false, {
@@ -324,7 +326,7 @@ function CalendarPage() {
                                                         className: "slot-blank"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/app/calendar/page.js",
-                                                        lineNumber: 151,
+                                                        lineNumber: 150,
                                                         columnNumber: 41
                                                     }, this),
                                                     Array.from({
@@ -342,7 +344,7 @@ function CalendarPage() {
                                                                         children: date.format("DD")
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/calendar/page.js",
-                                                                        lineNumber: 162,
+                                                                        lineNumber: 161,
                                                                         columnNumber: 53
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
@@ -350,25 +352,25 @@ function CalendarPage() {
                                                                         children: date.format("dddd")
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/src/app/calendar/page.js",
-                                                                        lineNumber: 163,
+                                                                        lineNumber: 162,
                                                                         columnNumber: 53
                                                                     }, this)
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/src/app/calendar/page.js",
-                                                                lineNumber: 161,
+                                                                lineNumber: 160,
                                                                 columnNumber: 49
                                                             }, this)
                                                         }, i, false, {
                                                             fileName: "[project]/src/app/calendar/page.js",
-                                                            lineNumber: 156,
+                                                            lineNumber: 155,
                                                             columnNumber: 45
                                                         }, this);
                                                     })
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/src/app/calendar/page.js",
-                                                lineNumber: 150,
+                                                lineNumber: 149,
                                                 columnNumber: 37
                                             }, this),
                                             hours.map((hour)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$antd$2f$es$2f$row$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Row$3e$__["Row"], {
@@ -383,7 +385,7 @@ function CalendarPage() {
                                                             children: hour
                                                         }, void 0, false, {
                                                             fileName: "[project]/src/app/calendar/page.js",
-                                                            lineNumber: 174,
+                                                            lineNumber: 173,
                                                             columnNumber: 41
                                                         }, this),
                                                         Array.from({
@@ -411,44 +413,44 @@ function CalendarPage() {
                                                                                 children: event.tag
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/app/calendar/page.js",
-                                                                                lineNumber: 194,
+                                                                                lineNumber: 193,
                                                                                 columnNumber: 57
                                                                             }, this),
                                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("label", {
                                                                                 children: event.title
                                                                             }, void 0, false, {
                                                                                 fileName: "[project]/src/app/calendar/page.js",
-                                                                                lineNumber: 195,
+                                                                                lineNumber: 194,
                                                                                 columnNumber: 57
                                                                             }, this)
                                                                         ]
                                                                     }, void 0, true, {
                                                                         fileName: "[project]/src/app/calendar/page.js",
-                                                                        lineNumber: 193,
+                                                                        lineNumber: 192,
                                                                         columnNumber: 53
                                                                     }, this)
                                                                 }, void 0, false)
                                                             }, i, false, {
                                                                 fileName: "[project]/src/app/calendar/page.js",
-                                                                lineNumber: 181,
+                                                                lineNumber: 180,
                                                                 columnNumber: 45
                                                             }, this);
                                                         })
                                                     ]
                                                 }, hour, true, {
                                                     fileName: "[project]/src/app/calendar/page.js",
-                                                    lineNumber: 173,
+                                                    lineNumber: 172,
                                                     columnNumber: 41
                                                 }, this))
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/calendar/page.js",
-                                        lineNumber: 148,
+                                        lineNumber: 147,
                                         columnNumber: 33
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/calendar/page.js",
-                                    lineNumber: 146,
+                                    lineNumber: 145,
                                     columnNumber: 29
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$antd$2f$es$2f$modal$2f$index$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Modal$3e$__["Modal"], {
@@ -464,7 +466,7 @@ function CalendarPage() {
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/calendar/page.js",
-                                            lineNumber: 216,
+                                            lineNumber: 215,
                                             columnNumber: 29
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -474,29 +476,29 @@ function CalendarPage() {
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/calendar/page.js",
-                                            lineNumber: 217,
+                                            lineNumber: 216,
                                             columnNumber: 29
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/calendar/page.js",
-                                    lineNumber: 210,
+                                    lineNumber: 209,
                                     columnNumber: 25
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/calendar/page.js",
-                            lineNumber: 144,
+                            lineNumber: 143,
                             columnNumber: 25
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/calendar/page.js",
-                        lineNumber: 143,
+                        lineNumber: 142,
                         columnNumber: 21
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/src/app/calendar/page.js",
-                    lineNumber: 142,
+                    lineNumber: 141,
                     columnNumber: 17
                 }, this)
             ]

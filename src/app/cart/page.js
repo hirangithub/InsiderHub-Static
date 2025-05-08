@@ -87,7 +87,7 @@ export default function Cart() {
                                 <label>Content goes here</label>
                             </Flex>
                         </Col>
-                        <Col span={4} style={{ justifyItems: 'flex-end' }}>
+                        <Col span={4} style={{ justifyContent: 'flex-end', width: '100%', display: 'flex' }}>
                             <Flex className="cart-holder" style={{ flexDirection: 'row', justifyItems: 'flex-end' }}>
                                 <ShoppingCartOutlined style={{ fontSize: '34px', fontWeight: 'normal' }} />
                                 <div>

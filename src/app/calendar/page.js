@@ -118,14 +118,13 @@ export default function CalendarPage() {
                     />
 
                      <Row align="bottom">
-                        <Col span={20}>
+                        <Col span={12}>
                             <Flex className="sub-title" style={{ flexDirection: 'column' }}>
                                 <Title level={4} style={{ marginBottom: 0 }}>My calendar</Title>
                                 <label>Manage your schedules to update your availability.</label>
                             </Flex>
                         </Col>
-                        <Col span={4} style={{ justifyItems: 'flex-end' }}>
-
+                        <Col span={12} style={{ justifyContent: 'flex-end', width: '100%', display: 'flex' }}>
                             <div className="calendar-toolbar">
                                 {isMobile ? (
                                 <Popover placement="bottomRight" overlayClassName="calendar-toolbar-popover" content={toolbarButtons} trigger="click">
