@@ -1,0 +1,71 @@
+$background: #09090B;
+$foreground: #FAFAFA;
+$muted: #27272A;
+$muted-foreground: #A1A1AA;
+$card: #18181B;
+$foreground: #FAFAFA;
+$border: #3F3F46;
+$outline: #E4E4E7;
+$brand-primary: #6D28D9;
+$brand-primary-dark: #5B21B6;
+$hyperlink: #8B5CF6;
+$destructive: #7F1D1D;
+
+// Define breakpoints in CSS
+$breakpoint-xs: 480px;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$breakpoint-xxl: 1600px;
+
+@mixin media($size) {
+  @if $size == 'xs' {
+    @media (min-width: $breakpoint-xs) { @content; }
+  } @else if $size == 'sm' {
+    @media (min-width: $breakpoint-sm) { @content; }
+  } @else if $size == 'md' {
+    @media (min-width: $breakpoint-md) { @content; }
+  } @else if $size == 'lg' {
+    @media (min-width: $breakpoint-lg) { @content; }
+  } @else if $size == 'xl' {
+    @media (min-width: $breakpoint-xl) { @content; }
+  } @else if $size == 'xxl' {
+    @media (min-width: $breakpoint-xxl) { @content; }
+  } @else {
+    @warn "Breakpoint '#{$size}' is not defined!";
+  }
+}
+  
+
+/* Regular */
+@font-face {
+    font-family: 'Inter Hub';
+    src: url('../fonts/Inter-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  /* Medium */
+  @font-face {
+    font-family: 'Inter Hub';
+    src: url('../fonts/Inter-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  /* SemiBold */
+  @font-face {
+    font-family: 'Inter Hub';
+    src: url('../fonts/Inter-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  /* Bold */
+  @font-face {
+    font-family: 'Inter Hub'; 
+    src: url('../fonts/Inter-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }

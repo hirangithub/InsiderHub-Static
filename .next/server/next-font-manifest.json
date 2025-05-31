@@ -1,10 +1,9 @@
 {
   "app": {
     "[project]/src/app/page": [],
-    "[project]/src/app/calendar/page": [],
-    "[project]/src/app/_not-found/page": [],
+    "[project]/src/app/settings/page": [],
     "[project]/src/app/cart/page": [],
-    "[project]/src/app/settings/page": []
+    "[project]/src/app/calendar/page": []
   },
   "appUsingSizeAdjust": false,
   "pages": {},
